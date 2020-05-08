@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./calendario.css">
+
+    <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
+    <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Calendário teste JS</h1>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                    <button class="btn btn-default" onclick="mesAnterior()">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>  
+                    </button>
+                    <label id="mes_atual">Mês</label>
+                    <button class="btn btn-default" onclick="mesProximo()">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <label class="dia_semana" for="domingo">Domingo</label>
+                    <label class="dia_semana" for="segunda">Segunda</label>
+                    <label class="dia_semana" for="terca">Terça</label>
+                    <label class="dia_semana" for="quarta">Quarta</label>
+                    <label class="dia_semana" for="quinta">Quinta</label>
+                    <label class="dia_semana" for="sexta">Sexta</label>
+                    <label class="dia_semana" for="sabado">Sábado</label>
+                  </div>
+                  <div class="row" id="calendario">
+                    <button class="btn btn-default botao_dia" type="button">1</button>
+                    <button class="btn btn-default botao_dia" type="button">2</button>
+                    <button class="btn btn-default botao_dia" type="button">3</button>
+                    <button class="btn btn-default botao_dia" type="button">4</button>
+                    <button class="btn btn-default botao_dia" type="button">5</button>
+                    <button class="btn btn-default botao_dia" type="button">6</button>
+                    <button class="btn btn-default botao_dia" type="button">7</button>
+                  </div>
+                  <!-- <div class="row">
+                    <button class="btn btn-default botao_dia" type="button">8</button>
+                    <button class="btn btn-default botao_dia" type="button">9</button>
+                    <button class="btn btn-default botao_dia" type="button">10</button>
+                    <button class="btn btn-default botao_dia" type="button">11</button>
+                    <button class="btn btn-default botao_dia" type="button">12</button>
+                    <button class="btn btn-default botao_dia" type="button">13</button>
+                    <button class="btn btn-default botao_dia" type="button">14</button>
+                  </div>
+                  <div class="row">
+                    <button class="btn btn-default botao_dia" type="button">15</button>
+                    <button class="btn btn-default botao_dia" type="button">16</button>
+                    <button class="btn btn-default botao_dia" type="button">17</button>
+                    <button class="btn btn-default botao_dia" type="button">18</button>
+                    <button class="btn btn-default botao_dia" type="button">19</button>
+                    <button class="btn btn-default botao_dia" type="button">20</button>
+                    <button class="btn btn-default botao_dia" type="button">21</button>
+                  </div>
+                  <div class="row">
+                    <button class="btn btn-default botao_dia" type="button">22</button>
+                    <button class="btn btn-default botao_dia" type="button">23</button>
+                    <button class="btn btn-default botao_dia" type="button">24</button>
+                    <button class="btn btn-default botao_dia" type="button">25</button>
+                    <button class="btn btn-default botao_dia" type="button">26</button>
+                    <button class="btn btn-default botao_dia" type="button">27</button>
+                    <button class="btn btn-default botao_dia" type="button">28</button>
+                  </div>
+                  <div class="row">
+                    <button class="btn btn-default botao_dia" type="button">29</button>
+                    <button class="btn btn-default botao_dia" type="button">30</button>
+                    <button class="btn btn-default botao_dia" type="button">31</button>
+                    <button class="btn btn-default botao_dia" type="button">0</button>
+                    <button class="btn btn-default botao_dia" type="button">0</button>
+                    <button class="btn btn-default botao_dia" type="button">0</button>
+                    <button class="btn btn-default botao_dia" type="button">0</button>
+                  </div> -->
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./calendario.js"></script>
+  </body>
+</html>

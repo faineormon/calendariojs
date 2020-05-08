@@ -1,0 +1,20 @@
+.botao_dia {
+    color: purple;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 5px 5px;
+}
+
+.dia_semana {
+    background-color: yellow;
+    color: purple;
+    width: 60px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0px 5px 0px;
+    text-align: center;
+    font-size: 12px;
+}
