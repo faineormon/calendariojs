@@ -5,7 +5,7 @@ var mes = data.getMonth();
 var ano = data.getFullYear();
 
 var primeiro_dia = new Date(ano, mes,1);
-var ultimo_dia = new Date(ano, mes+1,0);
+//var ultimo_dia = new Date(ano, mes+1,0);
 
 var c = [];
 
@@ -38,7 +38,7 @@ function mesProximo() {
 
 function calendario() {
     var i = primeiro_dia.getDay();
-    var ultimo = ultimo_dia.getDate();
+    //var ultimo = ultimo_dia.getDate();
 
     switch (i) {
         case 0:
@@ -64,26 +64,24 @@ function calendario() {
             break;
     }
 
-    /* for(i=0; i<42; i++) {
-        var dia = new Date(ano, mes,d);
-        for(lin=0; lin<6; lin++) {
-            for(col=0; col<7; col++) {
-                c.push([lin][col] = '<button class="btn btn-default botao_dia" type="button">'+dia.getDate()+'</button>');
-            }
+    
+    //for(i=0; i<42; i++) {
+        for(l=0; l<7; l++) {
+            var dia = new Date(ano, mes,d);
+            c.push('<button class="btn btn-default botao_dia" type="button">'+dia.getDate()+'</button>');
             d++;
         }
-    } */
-
-    for(i=0; i<42; i++) {
+    //}
+    
+    /* for(i=0; i<42; i++) {
         var dia = new Date(ano, mes,d);
         c.push('<button class="btn btn-default botao_dia" type="button">'+dia.getDate()+'</button>');
         d++;
-    }
+    } */
 
     calendario.innerHTML = c.join(' ');
+    //console.log(c.A);
 }
-
-
 
 document.getElementById('mes_atual').innerHTML = meses[mes];
 var calendario = document.getElementById('calendario');
