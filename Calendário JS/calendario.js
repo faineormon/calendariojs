@@ -64,23 +64,13 @@ function calendario() {
             break;
     }
 
-    
-    //for(i=0; i<42; i++) {
-        for(l=0; l<7; l++) {
-            var dia = new Date(ano, mes,d);
-            c.push('<button class="btn btn-default botao_dia" type="button">'+dia.getDate()+'</button>');
-            d++;
-        }
-    //}
-    
-    /* for(i=0; i<42; i++) {
+    for(l=0; l<42; l++) {
         var dia = new Date(ano, mes,d);
         c.push('<button class="btn btn-default botao_dia" type="button">'+dia.getDate()+'</button>');
         d++;
-    } */
-
+    }
+    
     calendario.innerHTML = c.join(' ');
-    //console.log(c.A);
 }
 
 document.getElementById('mes_atual').innerHTML = meses[mes];
