@@ -1,24 +1,37 @@
 .botao_dia {
-    color: purple;
-    font-size: 24px;
+    /* color: purple; */
+    font-size: 18px;
     width: 60px;
     height: 60px;
     text-align: center;
     margin: 5px 5px;
 }
 
-.dia_semana {
-    background-color: yellow;
+.botao_dia_extra {
     color: purple;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 5px 5px;
+    opacity: 0.3;
+}
+
+.dia_semana {
+    background-color: purple;
+    color: white;
     width: 60px;
     height: 20px;
     border: 1px solid;
     border-radius: 5px;
-    margin: 0px 5px 0px;
+    margin: 0px 4.7px 0px;
     text-align: center;
     font-size: 12px;
 }
 
 .tamanho_calendario {
     width: 560px;
+}
+#titulo_evento {
+    color: purple;
 }
